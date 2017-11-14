@@ -1,0 +1,26 @@
+@charset "UTF-8";
+
+$primary-color: #FA7473;
+
+// @TODO find a way to voerwrite this so it's not necessary to define it as its not
+// used anywhere!!
+$roboto-font-path: "./fonts/roboto/";
+
+@import "../node_modules/materialize-css/sass/materialize";
+
+// @TODO  create _overwrites.scss file
+body {
+  font-family: "Comfortaa", "Sans";
+}
+
+header {
+  background: $primary-color;
+}
+
+nav {
+  box-shadow: none;
+}
+
+.page-footer {
+  padding: 0;
+}
