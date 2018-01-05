@@ -1,15 +1,25 @@
 @charset "UTF-8";
 
-$primary-color: #FA7473;
+$primary-color: #5735D2;
+$baseGap: 25px;
 
-// @TODO find a way to voerwrite this so it's not necessary to define it as its not used anywhere!!
+// @TODO find a way to voerwrite this so it's not necessary to define it as its not
+// used anywhere!!
 $roboto-font-path: "./fonts/roboto/";
 
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import "../node_modules/materialize-css/sass/materialize";
 
 // @TODO  create _overwrites.scss file
+@media #{$small-and-down} {
+  nav .brand-logo {
+    font-size: 1.3rem;
+  }
+}
+
 body {
   font-family: "Comfortaa", "Sans";
+  font-size: 18px;
 }
 
 header {
@@ -18,12 +28,45 @@ header {
 
 nav {
   box-shadow: none;
+  height: 100px;
+
+  & .nav-wrapper {
+     display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.4rem;
 }
 
 .page-footer {
   padding: 0;
+  margin-top: $baseGap * 2;
+  
+  & .footer-copyright {
+    background: #fff;
+    color: #000;
+  }
+
+  & ul {
+    & li {
+      display: inline-block;
+      padding: 0 5px;
+    }
+  }
 }
 
-.card .card-image img {
-  height: 280px;
+.icon-small {
+  width: 20px;
+}
+
+.push-double--bottom {
+  margin-bottom: $baseGap * 2;
 }
