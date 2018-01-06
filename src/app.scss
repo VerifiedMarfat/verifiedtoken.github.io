@@ -3,10 +3,7 @@
 $primary-color: #5735D2;
 $baseGap: 25px;
 
-// @TODO find a way to voerwrite this so it's not necessary to define it as its not
-// used anywhere!!
 $roboto-font-path: "./fonts/roboto/";
-
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import "../node_modules/materialize-css/sass/materialize";
 
@@ -28,7 +25,6 @@ header {
 
 nav {
   box-shadow: none;
-  height: 100px;
 
   & .nav-wrapper {
      display: flex;
@@ -38,7 +34,12 @@ nav {
 }
 
 h1 {
-  font-size: 2.4rem;
+  font-size: 1.4rem;
+  @media #{$medium-and-up} {
+    & {
+      font-size: 1.8rem;
+    }
+  }
 }
 
 .logo {
@@ -52,6 +53,7 @@ h1 {
   & .footer-copyright {
     background: #fff;
     color: #000;
+    font-size: 1rem;
   }
 
   & ul {
