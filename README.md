@@ -8,12 +8,11 @@ The token collector.
 
 ### Requirements
 0. Nodejs >= 6.4
-0. Serve `npm i -g serve`
+0. webpack-dev-server `npm i -g webpack-dev-server`
 
 ### Setup
 0. `npm i`
-0. `webpack --watch`
-0. `serve`
+0. `webpack-dev-server`
 
 ## TODO
 
