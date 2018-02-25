@@ -1,6 +1,5 @@
 @charset "UTF-8";
 
-$primary-color: #8EBE00;
 $baseGap: 25px;
 
 $roboto-font-path: "./fonts/roboto/";
@@ -20,14 +19,15 @@ body {
 }
 
 header {
-  background: $primary-color;
+  background: #000;
 }
 
 nav {
   box-shadow: none;
+  background-color: transparent;
 
   & .nav-wrapper {
-     display: flex;
+    display: flex;
     justify-content: center;
     align-items: center;
   }
